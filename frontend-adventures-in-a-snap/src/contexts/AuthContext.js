@@ -1,17 +1,18 @@
 import React, { useState, createContext, useContext, useEffect } from "react";
+import { AlertContext } from "../contexts/AlertContext";
 import axios from "axios";
 
 export const AuthContext = createContext();
 
 export const AuthProvider = (props) => {
-  const [user, setUser] = useState();
+  const AlertData = useContext(AlertContext);
+  const { pushAlert } = AlertData;
+
+  const [user, setUser] = useState({});
   const fetchUser = async () => {
-    setUser(1);
     const data = await axios("/api/current_user");
     if (data.data) {
-      logIn(data.data._id);
-    } else {
-      logOut();
+      logIn(data.data);
     }
     return;
   };
@@ -21,11 +22,13 @@ export const AuthProvider = (props) => {
   }, []);
 
   const logIn = (user) => {
-    setUser(user);
+    setUser({ id: user._id, firstName: user.firstName });
+    pushAlert("You have logged in.", "green text-darken-2");
     return;
   };
   const logOut = () => {
-    setUser();
+    setUser({});
+    pushAlert("You have logged out.", "green text-darken-2");
     return;
   };
   return (
