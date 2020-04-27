@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { AuthProvider } from "./contexts/AuthContext";
 import { AlertProvider } from "./contexts/AlertContext";
 import Landing from "./pages/Landing";
+import "./App.css";
 
 import Nav from "./components/Nav";
 

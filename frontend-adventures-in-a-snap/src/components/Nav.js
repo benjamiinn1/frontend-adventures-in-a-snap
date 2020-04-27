@@ -31,6 +31,9 @@ const Nav = () => {
           </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li>
+              <Link to="/coaches">Coaches</Link>
+            </li>
+            <li>
               <Link to="/adventures">Adventures</Link>
             </li>
             <li>
@@ -55,6 +58,9 @@ const Nav = () => {
             <span className="fas fa-camera"></span>
           </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <li>
+              <Link to="/coaches">Coaches</Link>
+            </li>
             <li>
               <Link to="/adventures">Adventures</Link>
             </li>
