@@ -36,38 +36,6 @@ html {
   background-size: cover;
 }
 
-.landing-stripe {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 200px;
-  top: 450px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.landing-stripe-title {
-  font-size: 5rem;
-  text-shadow: 0px 2px 13px rgba(0, 0, 0, 0.76);
-}
-
-.landing-stripe-btngroup {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.landing-stripe-btngroup-btn {
-  width: 100%;
-  margin: 1rem;
-  color: white;
-  background-color: rgb(53, 53, 53);
-}
-
 .landing-grid {
   position: absolute;
   padding: 1rem;

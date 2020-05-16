@@ -1,0 +1,10 @@
+.adventures-cardlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.adventures-card {
+  width: 500px;
+}

@@ -1,22 +1,14 @@
 import React from "react";
 import "./Landing.css";
+import LandingStripe from "../components/LandingStripe";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
     <div>
       <div className="parallax"></div>
 
-      <div className="landing-stripe">
-        <h1 className="landing-stripe-title">Find your shot</h1>
-        <div className="landing-stripe-btngroup">
-          <span className="waves-effect waves-light btn-large landing-stripe-btngroup-btn">
-            Dallas
-          </span>
-          <span className="waves-effect waves-light btn-large landing-stripe-btngroup-btn">
-            Fort Worth
-          </span>
-        </div>
-      </div>
+      <LandingStripe />
 
       <div className="landing-grid">
         <h3 className="landing-stripe2-title">What is Adventures in a Snap</h3>
@@ -30,9 +22,12 @@ const Landing = () => {
           help guide you through finding the perfect shots and helping you
           capture an unforgettable experience in your city.
         </span>
-        <span className="waves-effect waves-light btn-large landing-stripe2-btn">
+        {/* <Link
+          to="/team"
+          className="waves-effect waves-light btn-large landing-stripe2-btn"
+        >
           Meet the experts
-        </span>
+        </Link> */}
       </div>
 
       <div className="parallax2"></div>

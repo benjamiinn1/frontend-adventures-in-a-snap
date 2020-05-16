@@ -1,10 +1,8 @@
 import React, { useContext } from "react";
 import axios from "axios";
 import { AuthContext } from "../contexts/AuthContext";
-import { AlertContext } from "../contexts/AlertContext";
 import Alert from "./Alert";
 import { Link } from "react-router-dom";
-import Logo from "../assets/images/AdventuresInASnapTransparent.png";
 
 import "./Nav.css";
 
@@ -30,16 +28,13 @@ const Nav = () => {
             <span className="fas fa-camera"></span>
           </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <li>
-              <Link to="/coaches">Coaches</Link>
-            </li>
+            {/* <li>
+              <Link to="/team">Meet the team</Link>
+            </li> */}
             <li>
               <Link to="/adventures">Adventures</Link>
             </li>
-            <li>
-              <Link to="/locations">Locations</Link>
-            </li>
-            <li>
+            <li onClick={signOut}>
               <a onClick={signOut}>Log Out</a>
             </li>
           </ul>
@@ -58,14 +53,11 @@ const Nav = () => {
             <span className="fas fa-camera"></span>
           </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
-            <li>
-              <Link to="/coaches">Coaches</Link>
-            </li>
+            {/* <li>
+              <Link to="/team">Meet the team</Link>
+            </li> */}
             <li>
               <Link to="/adventures">Adventures</Link>
-            </li>
-            <li>
-              <Link to="/locations">Locations</Link>
             </li>
             <li>
               <a href="/auth/google">Sign in</a>
