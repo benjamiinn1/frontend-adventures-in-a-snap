@@ -1,4 +1,4 @@
-# Welcome to the frontend-adventures-in-a-snap wiki!
+# Welcome to frontend-adventures-in-a-snap!
 
 <h2>this frontend is associated with backend-adventures-in-a-snap</h2>
 
