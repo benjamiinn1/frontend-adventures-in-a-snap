@@ -1,6 +1,6 @@
 # Welcome to frontend-adventures-in-a-snap!
 
-<h2>this frontend is associated with backend-adventures-in-a-snap</h2>
+<h6>This frontend is associated with backend-adventures-in-a-snap</h6>
 
 <h3>Why Adventures in a Snap?</h3>
 This project is built in an attempt to increase public intrest in the art of photography.
