@@ -8,11 +8,13 @@ My goal is to create an environment where people who have any intrest in photogr
 get together and learn some new skills all while having fun.
 
 <h3>technologies used</h3>
+
 - MERN stack
 - passportJS: authenticate with google (will possibly add more login solutions later)
 - mongoose: easy interaction with mongoDB (started out with mongodb package instead but made the switch to mongoose)
 
 <h3>upcoming updates</h3>
+
 - build an event-lookup component to find upcoming events.
 - build an event component to display info about an event.
 - build a create event component.
