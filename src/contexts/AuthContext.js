@@ -22,13 +22,17 @@ export const AuthProvider = (props) => {
   }, []);
 
   const logIn = (user) => {
-    setUser({ id: user._id, firstName: user.firstName });
-    pushAlert("You have logged in.", "green text-darken-2");
+    setUser({
+      id: user._id,
+      firstName: user.firstName,
+      instructor: user.instructor,
+    });
+    pushAlert("You have logged in.", "bg-success");
     return;
   };
   const logOut = () => {
     setUser({});
-    pushAlert("You have logged out.", "green text-darken-2");
+    pushAlert("You have logged out.", "bg-success");
     return;
   };
   return (
